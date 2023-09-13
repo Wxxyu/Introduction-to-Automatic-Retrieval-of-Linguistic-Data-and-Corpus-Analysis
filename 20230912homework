@@ -1,0 +1,9 @@
+num=int(input('籠內動物總隻數:'))
+legs=int(input('籠內動物總腳數:'))
+for j in range(0,num+1):
+    t=num-j
+    if j*2+t*4==legs:
+       print('雞有'+str(j)+'隻,兔有'+str(t)+'隻')
+      
+if legs < num+2 or legs > num*4 or legs%2 !=0 :
+    print('總隻數'+str(num)+',總腳數'+str(legs)+',無解')

@@ -1,0 +1,17 @@
+s={1,2,3,4,5}
+print(s)
+
+s.add(7)
+print(s)
+
+s.remove(4)
+print(s)
+
+9 in s
+
+d={'James':22,'Lily':23}
+
+d['Momo']=7
+print(d)
+
+d['James']

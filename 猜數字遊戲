@@ -1,0 +1,19 @@
+mport random #匯入產生隨機數字的模組
+
+# 隨機產生一個1到100之間的數字，並將這數字指定給變數 target_number
+target_number = random.randint(1, 100)
+
+
+try:
+    a=int(input('請猜一個1~100的數字。'))
+except ValueError:
+    print('不對唷！要輸人半形整數數字才可以喔！')
+
+while a!=target_number:
+    if a>target_number:
+        print('太大囉！再猜猜看。')
+    elif a<target_number:
+        print('太小囉！再猜猜看。')
+    else:
+        print('厲害耶！你猜到了唷！')
+        break

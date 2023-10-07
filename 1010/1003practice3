@@ -1,0 +1,18 @@
+while True:
+  number = input("請輸入一個數字 (按 Enter 離開): ")
+  
+  if not number:
+    break
+  
+  try:  
+    number = int(number)
+    
+    print(f"數字{number}的因數為:")
+    for i in range(1,number+1):
+      if number%i == 0:
+        print(i, end=" ")
+      
+    print()
+    
+  except ValueError:
+    print("輸入的不是數字,請重新輸入!")
